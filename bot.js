@@ -15,5 +15,10 @@ client.on('message', message => {
     	message.reply('no');
   	}
 });
+client.on('message', message => {
+    if (message.content === 'Die') {
+    	message.reply('no u');
+  	}
+});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
