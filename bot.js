@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Twitch') {
-    	 message.channel.send("Coming right up,", {files: ["https://www.twitch.tv/jrocketdoc"]}
+    	 message.reply (var result = str.link("https://www.twitch.tv/jrocketdoc");)
   }
 });
 // THIS  MUST  BE  THIS  WAY
