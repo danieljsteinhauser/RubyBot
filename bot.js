@@ -11,11 +11,9 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-    if (message.content === 'fire') {
-    	message.reply({
-        "id" : null,
-        "name" : "🔥"});
-  	}
+    if (message.content === 'Twitch') {
+    	 message.channel.send("Coming right up,", {files: ["https://www.twitch.tv/jrocketdoc"]}
+  }
 });
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
