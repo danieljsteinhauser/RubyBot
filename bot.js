@@ -10,10 +10,5 @@ client.on('message', message => {
     	message.reply('yes?');
   	}
 });
-client.on('message', message => {
-    if (message.content === 'Twitch') {
-    	 message.reply (var result = str.link("https://www.twitch.tv/jrocketdoc");)
-  }
-});
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
