@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const Math = Math.floor(Math.random() * 100);
+
 client.on('ready', () => {
     console.log('I am ready!');
 });
