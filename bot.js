@@ -19,7 +19,7 @@ client.on('message', message => {
     	message.channel.send(Math.floor(Math.random() * 100));
   	} else
         
-    if (message.content.startsWith(prefix + 'splatoon 2')){
+    if (message.content.startsWith(prefix + 'splatoon2')){
         message.member.addRole('471453908695252992').catch(error => console.log(error));
     
     }    
