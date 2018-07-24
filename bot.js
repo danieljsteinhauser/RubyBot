@@ -20,7 +20,9 @@ client.on('message', message => {
   	} else
         
     if (message.content.startsWith(prefix + 'splatoon2')){
-        message.member.addRole('471453908695252992').catch(error => console.log(error));
+        message.member.addRole('471453908695252992')
+        .then(console.log)
+        .catch(console.error);
     
     }    
 });
