@@ -12,7 +12,7 @@ client.on('message', message => {
 });
 client.on('message', message => {
     if (message.content === 'Number') {
-    	message.reply(Math.floor(Math.random() * 100));
+    	message.channel.send(Math.floor(Math.random() * 100));
   	}
 });
   	
