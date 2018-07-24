@@ -11,12 +11,12 @@ client.on('ready', () => {
 if (!message.content.startsWith(prefix)) return;
 
 client.on('message', message => {
-    if (message.content.startsWith(prefix + 'Anna')){
-    	message.reply('yes?');
+    if (message.content.startsWith(prefix + 'speak')){
+    	message.reply('no');
   	}
 });
 client.on('message', message => {
-    if (message.content.startsWith(prefix + 'Number')) {
+    if (message.content.startsWith(prefix + 'number')) {
     	message.channel.send(Math.floor(Math.random() * 100));
   	}
 });
