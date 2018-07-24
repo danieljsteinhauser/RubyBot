@@ -11,14 +11,10 @@ client.on('message', message => {
   	}
 });
 client.on('message', message => {
-    if (message.content === 'Are you happy?') {
-    	message.reply('no');
+    if (message.content === 'Number') {
+    	message.reply(Math.floor(Math.random() * 100));
   	}
 });
-client.on('message', message => {
-    if (message.content === 'Die') {
-    	message.reply('no u');
-  	}
-});
+  	
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
