@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let prefix = 'Anna,';
+let prefix = '.anna';
 
 client.on('ready', () => {
     console.log('I am ready!');
