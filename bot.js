@@ -1,14 +1,16 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let prefix = '.anna';
+let prefix = 'Anna, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
 });
 
-if (!message.content.startsWith(prefix)) return;
 
 client.on('message', message => {
+    
+    if (!message.content.startsWith(prefix)) return;
+
     if (message.content.startsWith(prefix + 'speak')){
     	message.reply('no');
   	} else
