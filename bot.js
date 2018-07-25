@@ -59,7 +59,7 @@ client.on('message', message => {
     } else
         
           if (message.content.startsWith(prefix + 'commands')) {
-    	message.channel.send('player - Gives access to the general channels!\n splatoon 2 - Gives access to the Splatoon 2 related channels!');
+    	message.reply('player - Gives access to the general channels!\nsplatoon 2 - Gives access to the Splatoon 2 related channels!\nsmash - Gives access to the Smash series related channels!\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels!\npromo - Gives access to the promotion channels!');
   	} 
               
 });
