@@ -6,6 +6,14 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find('welcome', '469920145335124008');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`Welcome to the server, ${member}! Make sure to check out the list of roles you can choose from!`);
+});
 
 client.on('message', message => {
     
