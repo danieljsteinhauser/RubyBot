@@ -50,14 +50,7 @@ client.on('message', message => {
     } else   
         
         
-         if (message.content.startsWith(prefix + 'Jtwitch')){
-        message.channel.send({
-  files: ['https://www.twitch.tv/jrocketdoc']
-})
-        .then(console.log)
-        .catch(console.error);
-    } else
-        
+ 
         
         
 });
