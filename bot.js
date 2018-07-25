@@ -47,7 +47,7 @@ client.on('message', message => {
         message.member.addRole('253198112498122752')
         .then(console.log)
         .catch(console.error);
-    } else   
+    }   
               
 });
   	
