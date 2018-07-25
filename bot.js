@@ -62,7 +62,7 @@ client.on('message', message => {
           message.reply('We appreciate having you join us! Make sure to check out what other roles you can get as well!');
     } else
         
-          if (message.content.startsWith(prefix + 'commands')) {
+          if (message.content.startsWith(prefix + 'roles')) {
     	message.reply('player - Gives access to the general channels!\nsplatoon 2 - Gives access to the Splatoon 2 related channels!\nsmash - Gives access to the Smash series related channels!\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels!\npromo - Gives access to the promotion channels!');
   	} 
               
