@@ -23,8 +23,43 @@ client.on('message', message => {
         message.member.addRole('334178368150831115')
         .then(console.log)
         .catch(console.error);
-    
-    }    
+    } else
+        
+         if (message.content.startsWith(prefix + 'smash')){
+        message.member.addRole('469925194744594463')
+        .then(console.log)
+        .catch(console.error);
+    } else
+        
+         if (message.content.startsWith(prefix + 'BBTag')){
+        message.member.addRole('469925096975237120')
+        .then(console.log)
+        .catch(console.error);
+    } else
+        
+         if (message.content.startsWith(prefix + 'promo')){
+        message.member.addRole('469926083106701362')
+        .then(console.log)
+        .catch(console.error);
+    } else
+        
+      if (message.content.startsWith(prefix + 'player')){
+        message.member.addRole('253198112498122752')
+        .then(console.log)
+        .catch(console.error);
+    } else   
+        
+        
+         if (message.content.startsWith(prefix + 'Jtwitch')){
+        message.channel.send({
+  files: ['https://www.twitch.tv/jrocketdoc']
+})
+        .then(console.log)
+        .catch(console.error);
+    } else
+        
+        
+        
 });
   	
 // THIS  MUST  BE  THIS  WAY
