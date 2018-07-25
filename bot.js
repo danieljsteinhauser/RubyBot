@@ -23,31 +23,35 @@ client.on('message', message => {
         message.member.addRole('334178368150831115')
         .then(console.log)
         .catch(console.error);
-        message.channel.send('Done, have fun with your new role!');
+        message.reply('Done, have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'smash')){
         message.member.addRole('469925194744594463')
         .then(console.log)
         .catch(console.error);
+             message.reply('Done, have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'BBTag')){
         message.member.addRole('469925096975237120')
         .then(console.log)
         .catch(console.error);
+             message.reply('Done, have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'promo')){
         message.member.addRole('469926083106701362')
         .then(console.log)
         .catch(console.error);
+             message.reply('Done, have fun with your new role!');
     } else
         
       if (message.content.startsWith(prefix + 'player')){
         message.member.addRole('253198112498122752')
         .then(console.log)
         .catch(console.error);
+          message.reply('We appreciate having you join us! Make sure to check out what other roles you can get as well!');
     }   
               
 });
