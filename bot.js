@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on("guildMemberAdd", (member) => {
   console.log(`New User "${member.user.username}" has joined "${member.guild.name}"`);
-  member.guild.channels.get("469920145335124008").send(`Thank you for joining the server "${member.user.username}"! Make sure to check out the list of roles you can choose from!`);
+  member.guild.channels.get("469920145335124008").send(`Thank you for joining the server "${member.user.username}"! Make sure to check out the list of roles you can choose from in the bot-commands channel!`);
 });
 
 client.on('message', message => {
