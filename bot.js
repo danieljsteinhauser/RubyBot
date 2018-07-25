@@ -23,6 +23,7 @@ client.on('message', message => {
         message.member.addRole('334178368150831115')
         .then(console.log)
         .catch(console.error);
+        message.channel.send('Done, have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'smash')){
