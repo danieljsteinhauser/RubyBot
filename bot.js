@@ -56,7 +56,12 @@ client.on('message', message => {
         .then(console.log)
         .catch(console.error);
           message.reply('We appreciate having you join us! Make sure to check out what other roles you can get as well!');
-    }   
+    } else
+        
+          if (message.content.startsWith(prefix + 'commands')) {
+    	message.channel.send('player - Gives access to the general channels!',
+                            'splatoon 2 - Gives access to the Splatoon 2 related channels!');
+  	} 
               
 });
   	
