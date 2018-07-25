@@ -48,11 +48,7 @@ client.on('message', message => {
         .then(console.log)
         .catch(console.error);
     } else   
-        
-        
- 
-        
-        
+              
 });
   	
 // THIS  MUST  BE  THIS  WAY
