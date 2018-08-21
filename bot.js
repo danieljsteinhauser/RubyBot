@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
-  const channel = member.guild.channels.find('welcome', '469920145335124008');
+  const channel = member.guild.channels.find('social', '255859167200411658');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
@@ -27,29 +27,29 @@ client.on('message', message => {
     	message.channel.send(Math.floor(Math.random() * 100));
   	} else
         
-    if (message.content.startsWith(prefix + 'splatoon2')){
-        message.member.addRole('334178368150831115')
+    if (message.content.startsWith(prefix + 'splatoon')){
+        message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
         message.reply('Done, have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'smash')){
-        message.member.addRole('469925194744594463')
+        message.member.addRole('481485523781943306')
         .then(console.log)
         .catch(console.error);
              message.reply('Done, have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'BBTag')){
-        message.member.addRole('469925096975237120')
+        message.member.addRole('481485486955692063')
         .then(console.log)
         .catch(console.error);
              message.reply('Done, have fun with your new role!');
     } else
         
-         if (message.content.startsWith(prefix + 'promo')){
-        message.member.addRole('469926083106701362')
+         if (message.content.startsWith(prefix + 'GG')){
+        message.member.addRole('481485431863771136')
         .then(console.log)
         .catch(console.error);
              message.reply('Done, have fun with your new role!');
