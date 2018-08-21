@@ -31,28 +31,28 @@ client.on('message', message => {
         message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
-        message.reply('Done, have fun with your new role!');
+        message.reply('done have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'smash')){
         message.member.addRole('481485523781943306')
         .then(console.log)
         .catch(console.error);
-             message.reply('Done, have fun with your new role!');
+             message.reply('done have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'BBTag')){
         message.member.addRole('481485486955692063')
         .then(console.log)
         .catch(console.error);
-             message.reply('Done, have fun with your new role!');
+             message.reply('done have fun with your new role!');
     } else
         
          if (message.content.startsWith(prefix + 'GG')){
         message.member.addRole('481485431863771136')
         .then(console.log)
         .catch(console.error);
-             message.reply('Done, have fun with your new role!');
+             message.reply('done have fun with your new role!');
     } else
         
       if (message.content.startsWith(prefix + 'player')){
@@ -63,7 +63,7 @@ client.on('message', message => {
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
-    	message.reply('player - Gives access to the general channels!\nsplatoon 2 - Gives access to the Splatoon 2 related channels!\nsmash - Gives access to the Smash series related channels!\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels!\npromo - Gives access to the promotion channels!');
+    	message.reply('player - Gives access to the general channels!\nSplatoon - Gives access to the Splatoon 2 related channels!\nSmash - Gives access to the Smash series related channels!\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels!\nGG - Gives access to the GGXrd2 channels!');
   	} 
               
 });
