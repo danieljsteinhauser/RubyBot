@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 let prefix = 'Ruby, ';
-let rudeRuby = Math.floor(Math.random() * 2);
+let rudeRuby = Math.floor(Math.random() * 3);
 
 client.on('ready', () => {
     console.log('I am ready!');
