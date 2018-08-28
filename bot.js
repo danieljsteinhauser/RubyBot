@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 let prefix = 'Ruby, ';
+let rudeRuby = Math.floor(Math.random() * 2);
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -31,7 +32,19 @@ client.on('message', message => {
         message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
-        message.reply('done have fun with your new role!');
+        switch(rudeRuby)
+        {
+            case 0 :
+                message.reply('done have fun with your new role!');
+                break;
+                
+            case 1 :
+                message.reply('can\'t you see I\'m busy?')
+                break;
+                
+                default :
+                message.channel.send('error')
+        }
     } else
         
          if (message.content.startsWith(prefix + 'smash')){
