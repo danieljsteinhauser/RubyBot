@@ -42,6 +42,10 @@ client.on('message', message => {
                 message.reply('can\'t you see I\'m busy?')
                 break;
                 
+            case 3 :
+                message.reply('stop bothering me...')
+                break;
+                
                 default :
                 message.channel.send('error')
         }
