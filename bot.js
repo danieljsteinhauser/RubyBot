@@ -34,11 +34,11 @@ client.on('message', message => {
         .catch(console.error);
         switch(rudeRuby)
         {
-            case 0 :
+            case 1 :
                 message.reply('done have fun with your new role!');
                 break;
                 
-            case 1 :
+            case 2 :
                 message.reply('can\'t you see I\'m busy?')
                 break;
                 
