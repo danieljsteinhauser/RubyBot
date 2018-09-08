@@ -56,7 +56,7 @@ client.on('message', message => {
                 break;
                 
                 default :
-                message.reply('You have your role, now go away...')
+                message.reply('you have your role, now go away...')
         }
     } else
         
@@ -64,6 +64,7 @@ client.on('message', message => {
         message.member.addRole('481485523781943306')
         .then(console.log)
         .catch(console.error);
+             let rudeRuby = Math.floor(Math.random() * 4);
              switch(rudeRuby)
         {
             case 1 :
@@ -85,7 +86,7 @@ client.on('message', message => {
                 break;
                 
                 default :
-                message.reply('You have your role, now go away...')
+                message.reply('you have your role, now go away...')
         }
     } else
         
@@ -93,6 +94,7 @@ client.on('message', message => {
         message.member.addRole('481485486955692063')
         .then(console.log)
         .catch(console.error);
+             let rudeRuby = Math.floor(Math.random() * 4);
              switch(rudeRuby)
         {
             case 1 :
@@ -114,7 +116,7 @@ client.on('message', message => {
                 break;
                 
                 default :
-                message.reply('You have your role, now go away...')
+                message.reply('you have your role, now go away...')
         }
     } else
         
@@ -122,6 +124,7 @@ client.on('message', message => {
         message.member.addRole('481485431863771136')
         .then(console.log)
         .catch(console.error);
+             let rudeRuby = Math.floor(Math.random() * 4);
              switch(rudeRuby)
         {
             case 1 :
@@ -143,7 +146,7 @@ client.on('message', message => {
                 break;
                 
                 default :
-                message.reply('You have your role, now go away...')
+                message.reply('you have your role, now go away...')
         }
     } else
         
@@ -155,7 +158,7 @@ client.on('message', message => {
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
-    	message.reply('Persona - Gives access to channels related to Fullmetal and his content.\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels where I rein supreme. \nGG - Gives access to the GGXrd2 channels.');
+    	message.reply('Persona - Gives access to channels related to Fullmetal and his content.\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} 
               
 });
