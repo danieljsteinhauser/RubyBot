@@ -154,7 +154,7 @@ client.on('message', message => {
         message.member.addRole('481189063064551475')
         .then(console.log)
         .catch(console.error);
-          message.reply('You get to see more of me now, have fun :smiling_imp: !');
+          message.reply('you get to see more of me now, have fun :smiling_imp: !');
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
