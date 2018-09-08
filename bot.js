@@ -34,7 +34,7 @@ client.on('message', message => {
         message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
-        let rudeRuby = Math.floor(Math.random() * 3);
+        let rudeRuby = Math.floor(Math.random() * 4);
         switch(rudeRuby)
         {
             case 1 :
@@ -56,7 +56,7 @@ client.on('message', message => {
                 break;
                 
                 default :
-                message.channel.send('error')
+                message.channel.send('Confirmed 0')
         }
     } else
         
