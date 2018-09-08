@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 let prefix = 'Ruby, ';
-let rudeRuby = Math.floor(Math.random() * 3);
+
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -34,6 +34,7 @@ client.on('message', message => {
         message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
+        let rudeRuby = Math.floor(Math.random() * 3);
         switch(rudeRuby)
         {
             case 1 :
