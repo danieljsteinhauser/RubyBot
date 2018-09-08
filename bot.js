@@ -9,8 +9,8 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
-  const channel = member.guild.channels.find('social', '255859167200411658');
-  const role = member.guild.roles.find('guests', '256943213477101569' );
+  const channel = member.guild.channels.find('255859167200411658', 'social');
+  const role = member.guild.roles.find('256943213477101569', 'Guests' );
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
