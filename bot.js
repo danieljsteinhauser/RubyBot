@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 let prefix = 'Ruby, ';
-let rudeRuby = Math.floor(Math.random() * 5);
+let rudeRuby = Math.floor(Math.random() * 3);
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -37,15 +37,21 @@ client.on('message', message => {
         switch(rudeRuby)
         {
             case 1 :
+                if(rudeRuby == 1){
                 message.reply('done have fun with your new role!');
+                };
                 break;
                 
             case 2 :
+                if(rudeRuby == 2){
                 message.reply('can\'t you see I\'m busy?')
+                };
                 break;
                 
             case 3 :
+                if(rudeRuby == 3){
                 message.reply('stop bothering me...')
+                };
                 break;
                 
                 default :
