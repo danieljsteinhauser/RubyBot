@@ -39,7 +39,7 @@ client.on('message', message => {
         {
             case 1 :
                 if(rudeRuby == 1){
-                message.reply('done have fun with your new role!');
+                message.reply('I\'m only doing this because I have to...');
                 };
                 break;
                 
@@ -51,12 +51,12 @@ client.on('message', message => {
                 
             case 3 :
                 if(rudeRuby == 3){
-                message.reply('stop bothering me...')
+                message.reply('stop bothering me.')
                 };
                 break;
                 
                 default :
-                message.channel.send('Confirmed 0')
+                message.reply('You have your role, now go away...')
         }
     } else
         
@@ -64,32 +64,98 @@ client.on('message', message => {
         message.member.addRole('481485523781943306')
         .then(console.log)
         .catch(console.error);
-             message.reply('done have fun with your new role!');
+             switch(rudeRuby)
+        {
+            case 1 :
+                if(rudeRuby == 1){
+                message.reply('I\'m only doing this because I have to...');
+                };
+                break;
+                
+            case 2 :
+                if(rudeRuby == 2){
+                message.reply('can\'t you see I\'m busy?')
+                };
+                break;
+                
+            case 3 :
+                if(rudeRuby == 3){
+                message.reply('stop bothering me.')
+                };
+                break;
+                
+                default :
+                message.reply('You have your role, now go away...')
+        }
     } else
         
          if (message.content.startsWith(prefix + 'BBTag')){
         message.member.addRole('481485486955692063')
         .then(console.log)
         .catch(console.error);
-             message.reply('done have fun with your new role!');
+             switch(rudeRuby)
+        {
+            case 1 :
+                if(rudeRuby == 1){
+                message.reply('I\'m only doing this because I have to...');
+                };
+                break;
+                
+            case 2 :
+                if(rudeRuby == 2){
+                message.reply('can\'t you see I\'m busy?')
+                };
+                break;
+                
+            case 3 :
+                if(rudeRuby == 3){
+                message.reply('stop bothering me.')
+                };
+                break;
+                
+                default :
+                message.reply('You have your role, now go away...')
+        }
     } else
         
          if (message.content.startsWith(prefix + 'GG')){
         message.member.addRole('481485431863771136')
         .then(console.log)
         .catch(console.error);
-             message.reply('done have fun with your new role!');
+             switch(rudeRuby)
+        {
+            case 1 :
+                if(rudeRuby == 1){
+                message.reply('I\'m only doing this because I have to...');
+                };
+                break;
+                
+            case 2 :
+                if(rudeRuby == 2){
+                message.reply('can\'t you see I\'m busy?')
+                };
+                break;
+                
+            case 3 :
+                if(rudeRuby == 3){
+                message.reply('stop bothering me.')
+                };
+                break;
+                
+                default :
+                message.reply('You have your role, now go away...')
+        }
     } else
         
-      if (message.content.startsWith(prefix + 'player')){
-        message.member.addRole('253198112498122752')
+      if (message.content.startsWith(prefix + 'persona')){
+        message.member.addRole('481189063064551475')
         .then(console.log)
         .catch(console.error);
-          message.reply('We appreciate having you join us! Make sure to check out what other roles you can get as well!');
+          message.reply('You get to see more of me now, have fun :smiling_imp: !');
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
-    	message.reply('player - Gives access to the general channels!\nSplatoon - Gives access to the Splatoon 2 related channels!\nSmash - Gives access to the Smash series related channels!\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels!\nGG - Gives access to the GGXrd2 channels!');
+    	message.reply('Persona - Gives access to channels related to Fullmetal and his content.\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels where I rein supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} 
               
 });
