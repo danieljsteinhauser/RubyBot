@@ -2,11 +2,11 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 let prefix = 'Ruby, ';
 
-
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setStatus('Online');
-    bot.user.setGame('I\'m the best, deal with it');
+    
+    bot.user.setStatus('Online')
+    bot.user.setGame('I\'m the best, deal with it')
     bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc');
 });
 
@@ -179,8 +179,8 @@ client.on('message', message => {
               } else
                     
                     
-                      if (message.content.startsWith(prefix + 'remove persona')){
-                    message.member.removeRole('481189063064551475')
+       if (message.content.startsWith(prefix + 'remove persona')){
+          message.member.removeRole('481189063064551475')
   .then(console.log)
   .catch(console.error);
                       } else
@@ -197,10 +197,9 @@ client.on('message', message => {
                     if (message.content.startsWith(prefix + 'remove GG')){
                     message.member.removeRole('481485431863771136')
   .then(console.log)
-  .catch(console.error);}
-                    
-        
-              
+  .catch(console.error);
+                    }
+                                 
 });
   	
 // THIS  MUST  BE  THIS  WAY
