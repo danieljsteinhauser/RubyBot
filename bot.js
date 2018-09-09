@@ -5,9 +5,9 @@ let prefix = 'Ruby, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setStatus('Online')
-    bot.user.setGame('I\'m the best, deal with it')
-    bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc')
+    bot.user.setStatus('Online');
+    bot.user.setGame('I\'m the best, deal with it');
+    bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc');
 });
 
 client.on('guildMemberAdd', member => {
@@ -165,32 +165,32 @@ client.on('message', message => {
     	message.reply('Persona - Gives access to channels related to Fullmetal and his content.\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} else
         
-                    if (message.content.startsWith(prefix + 'remove splatoon') {
+                    if (message.content.startsWith(prefix + 'remove splatoon')) {
                         let begone ==  message.member.removeRole('481485569063518217')
   .then(console.log)
   .catch(console.error);} else
                     
             
-              if (message.content.startsWith(prefix + 'remove smash'){
+              if (message.content.startsWith(prefix + 'remove smash')){
                     message.member.removeRole('481485523781943306')
   .then(console.log)
   .catch(console.error);} else
                     
                     
-                      if (message.content.startsWith(prefix + 'remove persona'){
+                      if (message.content.startsWith(prefix + 'remove persona')){
                     message.member.removeRole('481189063064551475')
   .then(console.log)
   .catch(console.error);} else
                     
                     
-                       if (message.content.startsWith(prefix + 'remove BBTag'){
+                       if (message.content.startsWith(prefix + 'remove BBTag')){
                     message.member.removeRole('481485486955692063')
   .then(console.log)
   .catch(console.error);} else
                     
                     
                      
-                    if (message.content.startsWith(prefix + 'remove GG'){
+                    if (message.content.startsWith(prefix + 'remove GG')){
                     message.member.removeRole('481485431863771136')
   .then(console.log)
   .catch(console.error);}
