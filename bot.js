@@ -168,25 +168,29 @@ client.on('message', message => {
                     if (message.content.startsWith(prefix + 'remove splatoon')) {
                         let begone ==  message.member.removeRole('481485569063518217')
   .then(console.log)
-  .catch(console.error);} else
+  .catch(console.error);
+                    } else
                     
             
               if (message.content.startsWith(prefix + 'remove smash')){
                     message.member.removeRole('481485523781943306')
   .then(console.log)
-  .catch(console.error);} else
+  .catch(console.error);
+              } else
                     
                     
                       if (message.content.startsWith(prefix + 'remove persona')){
                     message.member.removeRole('481189063064551475')
   .then(console.log)
-  .catch(console.error);} else
+  .catch(console.error);
+                      } else
                     
                     
                        if (message.content.startsWith(prefix + 'remove BBTag')){
                     message.member.removeRole('481485486955692063')
   .then(console.log)
-  .catch(console.error);} else
+  .catch(console.error);
+                       } else
                     
                     
                      
@@ -195,7 +199,7 @@ client.on('message', message => {
   .then(console.log)
   .catch(console.error);}
                     
-        }
+        
               
 });
   	
