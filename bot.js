@@ -4,7 +4,8 @@ let prefix = 'Ruby, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setGame('Test')
+    bot.user.setStatus('Online')
+    bot.user.setGame('Test', 'https://www.twitch.tv/jrocketdoc')
 });
 
 client.on('guildMemberAdd', member => {
