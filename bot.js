@@ -4,6 +4,7 @@ let prefix = 'Ruby, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
+    bot.user.setGame('Test')
 });
 
 client.on('guildMemberAdd', member => {
