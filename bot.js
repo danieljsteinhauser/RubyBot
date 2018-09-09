@@ -4,8 +4,6 @@ let prefix = 'Ruby, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setStatus('Online')
-    bot.user.setGame('Test', 'https://www.twitch.tv/jrocketdoc')
 });
 
 client.on('guildMemberAdd', member => {
@@ -162,6 +160,7 @@ client.on('message', message => {
                         message.member.removeRole('481485569063518217')
   .then(console.log)
   .catch(console.error);
+                         message.reply('you\'ve been successfully removed')
                     } else
                     
             
@@ -169,6 +168,7 @@ client.on('message', message => {
                     message.member.removeRole('481485523781943306')
   .then(console.log)
   .catch(console.error);
+                   message.reply('you\'ve been successfully removed')
               } else
                     
                     
@@ -176,6 +176,7 @@ client.on('message', message => {
           message.member.removeRole('481189063064551475')
   .then(console.log)
   .catch(console.error);
+            message.reply('you\'ve been successfully removed')
                       } else
                     
                     
@@ -183,6 +184,7 @@ client.on('message', message => {
                     message.member.removeRole('481485486955692063')
   .then(console.log)
   .catch(console.error);
+                           message.reply('I don\'t blame you for getting salty, losing to me all the time. You\'re always welcome to come back and repeat the process though.')
                        } else
                     
                     
@@ -191,6 +193,7 @@ client.on('message', message => {
                     message.member.removeRole('481485431863771136')
   .then(console.log)
   .catch(console.error);
+                        message.reply('you\'ve been successfully removed')
                     }
                                  
 });
