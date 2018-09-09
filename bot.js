@@ -195,7 +195,7 @@ client.on('message', message => {
   .catch(console.error);
                         message.reply('you\'ve been successfully removed')
                     }
-                                 
+                            return message.channel.send('Ask me something properly. \"Ruby, \" is the correct syntax. Talk to me like you would a human.')     
 });
   	
 // THIS  MUST  BE  THIS  WAY
