@@ -4,21 +4,12 @@ let prefix = 'Ruby, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
-    
-    bot.user.setStatus('Online')
-    bot.user.setGame('I\'m the best, deal with it')
-    bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc');
 });
 
 client.on('guildMemberAdd', member => {
-  // Send the message to a designated channel on a server:
-  const channel = member.guild.channels.find('255859167200411658', 'social');
-  const role = member.guild.roles.find('256943213477101569', 'Guests' );
-  // Do nothing if the channel wasn't found on this server
-  if (!channel) return;
-  // Send the message, mentioning the member
-  channel.send(`Welcome to the server, ${member}`);
-    member.addRole(role);
+  console.log(member.user.username + 'welcome to the server!')
+    console.log(member)
+    const role = member.guild.roles.find('name', 'Guests');
 });
 
 
