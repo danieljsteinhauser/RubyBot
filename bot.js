@@ -5,6 +5,7 @@ let prefix = 'Ruby, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
+    bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc')
 });
 
 client.on('guildMemberAdd', member => {
@@ -17,8 +18,6 @@ client.on('guildMemberAdd', member => {
   channel.send(`Welcome to the server, ${member}`);
     member.addRole(role);
 });
-
-bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc')
 
 
 client.on('message', message => {
