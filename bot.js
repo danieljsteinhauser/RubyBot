@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 let prefix = 'Ruby, ';
-let begone = message.content.startsWith('');
+
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -162,7 +162,7 @@ client.on('message', message => {
   	} else
         
         if (message.content.startsWith(prefix + begone)){
-  
+  let begone = message.content.startsWith('');
             switch(begone)
             {
             
