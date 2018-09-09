@@ -5,6 +5,8 @@ let prefix = 'Ruby, ';
 
 client.on('ready', () => {
     console.log('I am ready!');
+    bot.user.setStatus('Online')
+    bot.user.setGame('I\'m the best, deal with it')
     bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc')
 });
 
