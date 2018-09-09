@@ -166,7 +166,7 @@ client.on('message', message => {
   	} else
         
                     if (message.content.startsWith(prefix + 'remove splatoon')) {
-                        let begone ==  message.member.removeRole('481485569063518217')
+                        message.member.removeRole('481485569063518217')
   .then(console.log)
   .catch(console.error);
                     } else
