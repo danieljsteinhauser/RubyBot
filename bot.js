@@ -18,6 +18,9 @@ client.on('guildMemberAdd', member => {
     member.addRole(role);
 });
 
+bot.user.setGame('I\'m the best, deal with it', 'https://www.twitch.tv/jrocketdoc')
+
+
 client.on('message', message => {
     
     if (!message.content.startsWith(prefix)) return;
@@ -162,7 +165,7 @@ client.on('message', message => {
   	} else
         
         if (message.content.startsWith(prefix + begone)){
-  let begone = message.content.startsWith('');
+  let begone = '';
             switch(begone)
             {
             
