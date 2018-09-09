@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 let prefix = 'Ruby, ';
-
+let begone = message.content.startsWith('');
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -154,12 +154,57 @@ client.on('message', message => {
         message.member.addRole('481189063064551475')
         .then(console.log)
         .catch(console.error);
-          message.reply('you get to see more of me now, have fun :smiling_imp: !');
+          message.reply('you get to see more of me now, have fun :smiling_imp:');
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
     	message.reply('Persona - Gives access to channels related to Fullmetal and his content.\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
-  	} 
+  	} else
+        
+        if (message.content.startsWith(prefix + begone)){
+  
+            switch(begone)
+            {
+            
+                case 1 :
+                    if(begone == 'remove splatoon'){
+                    message.member.removeRole('481485569063518217')
+  .then(console.log)
+  .catch(console.error);}
+                    break;
+            
+             case 2 :
+                      if(begone == 'remove smash'){
+                    message.member.removeRole('481485523781943306')
+  .then(console.log)
+  .catch(console.error);}
+                    break;
+                    
+                     case 3 : if(begone == 'remove persona'){
+                    message.member.removeRole('481189063064551475')
+  .then(console.log)
+  .catch(console.error);}
+                    break;
+                    
+                     case 4 :  if(begone == 'remove BBTag'){
+                    message.member.removeRole('481485486955692063')
+  .then(console.log)
+  .catch(console.error);}
+                    break;
+                    
+                     case 5 :
+                    if(begone == 'remove GG'){
+                    message.member.removeRole('481485431863771136')
+  .then(console.log)
+  .catch(console.error);}
+                    break;
+            
+          default :
+                    message.channel.send('Actually do the command right and maybe I might work...')
+                       
+            }
+            
+        }
               
 });
   	
