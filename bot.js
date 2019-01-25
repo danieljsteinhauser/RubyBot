@@ -154,7 +154,7 @@ client.on('message', message => {
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
-    	message.reply('Supporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
+    	message.reply('\nSupporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} else
         
                     if (message.content.startsWith(prefix + 'remove splatoon')) {
