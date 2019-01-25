@@ -1,2 +1,2 @@
-# AnnaBot1
-First Interation of "Anna" bot
+# RubyBot
+Rude Ruby Bot
