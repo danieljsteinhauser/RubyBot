@@ -146,7 +146,7 @@ client.on('message', message => {
         }
     } else
         
-      if (message.content.startsWith(prefix + 'persona')){
+      if (message.content.startsWith(prefix + 'supporter')){
         message.member.addRole('481189063064551475')
         .then(console.log)
         .catch(console.error);
@@ -154,7 +154,7 @@ client.on('message', message => {
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
-    	message.reply('Persona - Gives access to channels related to Fullmetal and his content.\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
+    	message.reply('Supporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} else
         
                     if (message.content.startsWith(prefix + 'remove splatoon')) {
@@ -173,7 +173,7 @@ client.on('message', message => {
               } else
                     
                     
-       if (message.content.startsWith(prefix + 'remove persona')){
+       if (message.content.startsWith(prefix + 'remove supporter')){
           message.member.removeRole('481189063064551475')
   .then(console.log)
   .catch(console.error);
