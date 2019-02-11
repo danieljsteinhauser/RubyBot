@@ -19,7 +19,7 @@ client.on('message', message => {
     if (!message.content.startsWith(prefix)) return;
 
     if (message.content.startsWith(prefix + 'speak')){
-    	message.reply('no');
+    	message.channel.send('no');
   	} else
 
     if (message.content.startsWith(prefix + 'number')) {
