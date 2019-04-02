@@ -26,7 +26,36 @@ client.on('message', message => {
     	message.channel.send(Math.floor(Math.random() * 100));
   	} else
         
-    if (message.content.startsWith(prefix + 'splatoon')){
+    if (message.content.startsWith(prefix + 'Unist')){
+        message.member.addRole('562663500808323073')
+        .then(console.log)
+        .catch(console.error);
+             let rudeRuby = Math.floor(Math.random() * 4);
+             switch(rudeRuby)
+        {
+            case 1 :
+                if(rudeRuby == 1){
+                message.reply('I\'m only doing this because I have to...');
+                };
+                break;
+                
+            case 2 :
+                if(rudeRuby == 2){
+                message.reply('can\'t you see I\'m busy?')
+                };
+                break;
+                
+            case 3 :
+                if(rudeRuby == 3){
+                message.reply('stop bothering me.')
+                };
+                break;
+                
+                default :
+                message.reply('you have your role, now go away...')
+        } 
+    } else
+            if (message.content.startsWith(prefix + 'splatoon')){
         message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
@@ -157,7 +186,14 @@ client.on('message', message => {
     	message.reply('\nSupporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} else
         
-                    if (message.content.startsWith(prefix + 'remove splatoon')) {
+                   if (message.content.startsWith(prefix + 'remove unist')) {
+                        message.member.removeRole('562663500808323073')
+  .then(console.log)
+  .catch(console.error);
+                         message.reply('you\'ve been successfully removed')
+                    } else
+                        
+                        if (message.content.startsWith(prefix + 'remove splatoon')) {
                         message.member.removeRole('481485569063518217')
   .then(console.log)
   .catch(console.error);
