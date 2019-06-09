@@ -55,7 +55,7 @@ client.on('message', message => {
                 message.reply('you have your role, now go away...')
         } 
     } else
-            if (message.content.startsWith(prefix + 'granblue')){
+            if (message.content.startsWith(prefix + 'Granblue')){
         message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
@@ -85,7 +85,7 @@ client.on('message', message => {
         }
     } else
         
-         if (message.content.startsWith(prefix + 'smash')){
+         if (message.content.startsWith(prefix + 'Smash')){
         message.member.addRole('481485523781943306')
         .then(console.log)
         .catch(console.error);
@@ -175,7 +175,7 @@ client.on('message', message => {
         }
     } else
         
-      if (message.content.startsWith(prefix + 'supporter')){
+      if (message.content.startsWith(prefix + 'Supporter')){
         message.member.addRole('481189063064551475')
         .then(console.log)
         .catch(console.error);
@@ -183,17 +183,17 @@ client.on('message', message => {
     } else
         
           if (message.content.startsWith(prefix + 'roles')) {
-    	message.reply('\nSupporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nSplatoon - Gives access to the Splatoon 2 related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
+    	message.reply('\nSupporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nGranblue - Gives access to the Granblue Fantasy Versus related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} else
         
-                   if (message.content.startsWith(prefix + 'remove unist')) {
+                   if (message.content.startsWith(prefix + 'remove Unist')) {
                         message.member.removeRole('562663500808323073')
   .then(console.log)
   .catch(console.error);
                          message.reply('you\'ve been successfully removed')
                     } else
                         
-                        if (message.content.startsWith(prefix + 'remove granblue')) {
+                        if (message.content.startsWith(prefix + 'remove Granblue')) {
                         message.member.removeRole('481485569063518217')
   .then(console.log)
   .catch(console.error);
@@ -201,7 +201,7 @@ client.on('message', message => {
                     } else
                     
             
-              if (message.content.startsWith(prefix + 'remove smash')){
+              if (message.content.startsWith(prefix + 'remove Smash')){
                     message.member.removeRole('481485523781943306')
   .then(console.log)
   .catch(console.error);
@@ -209,7 +209,7 @@ client.on('message', message => {
               } else
                     
                     
-       if (message.content.startsWith(prefix + 'remove supporter')){
+       if (message.content.startsWith(prefix + 'remove Supporter')){
           message.member.removeRole('481189063064551475')
   .then(console.log)
   .catch(console.error);
