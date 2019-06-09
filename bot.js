@@ -55,7 +55,7 @@ client.on('message', message => {
                 message.reply('you have your role, now go away...')
         } 
     } else
-            if (message.content.startsWith(prefix + 'splatoon')){
+            if (message.content.startsWith(prefix + 'granblue')){
         message.member.addRole('481485569063518217')
         .then(console.log)
         .catch(console.error);
@@ -193,7 +193,7 @@ client.on('message', message => {
                          message.reply('you\'ve been successfully removed')
                     } else
                         
-                        if (message.content.startsWith(prefix + 'remove splatoon')) {
+                        if (message.content.startsWith(prefix + 'remove granblue')) {
                         message.member.removeRole('481485569063518217')
   .then(console.log)
   .catch(console.error);
