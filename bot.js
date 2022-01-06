@@ -27,7 +27,7 @@ client.on('message', message => {
   	} else
         
     if (message.content.startsWith(prefix + 'Unist')){
-        message.member.addRole('562663500808323073')
+        message.member.addRole('928341780632596501')
         .then(console.log)
         .catch(console.error);
              let rudeRuby = Math.floor(Math.random() * 4);
