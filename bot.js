@@ -116,7 +116,7 @@ client.on('message', message => {
     } else
         
          if (message.content.startsWith(prefix + 'BBTag')){
-        message.member.addRole('481485486955692063')
+        message.member.addRole('928341780632596507')
         .then(console.log)
         .catch(console.error);
              let rudeRuby = Math.floor(Math.random() * 4);
