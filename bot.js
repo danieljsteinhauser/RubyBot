@@ -92,9 +92,7 @@ client.on('message', message => {
     } else
         
          if (message.content.startsWith(prefix + 'BBTag')){
-        message.member.roles.add('928341780632596507')
-        .then(console.log)
-        .catch(console.error);
+        message.member.roles.add('928341780632596507').catch(console.error);
              let rudeRuby = Math.floor(Math.random() * 4);
              switch(rudeRuby)
         {
