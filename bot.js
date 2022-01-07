@@ -119,8 +119,8 @@ client.on('message', message => {
         }
     } else
         
-         if (message.content.startsWith(prefix + 'GG')){
-        message.member.addRole('481485431863771136')
+         if (message.content.startsWith(prefix + 'Melty')){
+        message.member.addRole('919732844518068225')
         .then(console.log)
         .catch(console.error);
              let rudeRuby = Math.floor(Math.random() * 4);
