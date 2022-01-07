@@ -55,8 +55,8 @@ client.on('message', message => {
                 message.reply('you have your role, now go away...')
         } 
     } else
-            if (message.content.startsWith(prefix + 'Granblue')){
-        message.member.addRole('481485569063518217')
+            if (message.content.startsWith(prefix + 'test')){
+        message.member.addRole('929049566605619230')
         .then(console.log)
         .catch(console.error);
         let rudeRuby = Math.floor(Math.random() * 4);
