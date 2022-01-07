@@ -1,6 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-let prefix = 'Ruby, ';
+let prefix = '-';
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -218,7 +218,7 @@ client.on('message', message => {
                     
                     
                        if (message.content.startsWith(prefix + 'remove BBTag')){
-                    message.member.removeRole('481485486955692063')
+                    message.member.removeRole('928341780632596507')
   .then(console.log)
   .catch(console.error);
                            message.reply('I don\'t blame you for getting salty, losing to me all the time. You\'re always welcome to come back and repeat the process though.')
