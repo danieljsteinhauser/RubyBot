@@ -30,30 +30,7 @@ client.on('message', message => {
         message.member.addRole('928341780632596501')
         .then(console.log)
         .catch(console.error);
-             let rudeRuby = Math.floor(Math.random() * 4);
-             switch(rudeRuby)
-        {
-            case 1 :
-                if(rudeRuby == 1){
-                message.reply('I\'m only doing this because I have to...');
-                };
-                break;
-                
-            case 2 :
-                if(rudeRuby == 2){
-                message.reply('can\'t you see I\'m busy?')
-                };
-                break;
-                
-            case 3 :
-                if(rudeRuby == 3){
-                message.reply('stop bothering me.')
-                };
-                break;
-                
-                default :
-                message.reply('you have your role, now go away...')
-        } 
+           
     } else
             if (message.content.startsWith(prefix + 'test')){
         member.guild.roles.find('name', 'test')
