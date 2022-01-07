@@ -56,7 +56,7 @@ client.on('message', message => {
         } 
     } else
             if (message.content.startsWith(prefix + 'test')){
-        message.member.roles.add('929049566605619230')
+        member.guild.roles.find('name', 'test')
         .catch(console.error);
         let rudeRuby = Math.floor(Math.random() * 4);
         switch(rudeRuby)
