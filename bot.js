@@ -8,8 +8,8 @@ client.on('ready', () => {
 
 client.on('guildMemberAdd', member => {
   console.log(member.user.username + 'welcome to the server!')
-    console.log(member)
-    const role = member.guild.roles.find('name', 'Guests');
+   
+    let role = member.guild.roles.find('name', 'test');
     member.addRole(role);
 });
 
