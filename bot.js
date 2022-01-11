@@ -33,7 +33,7 @@ client.on('message', message => {
            
     } else
             if (message.content.startsWith(prefix + 'test')){
-        member.guild.roles.find('name', 'test')
+        member.roles.add('928341780632596506')
         .catch(console.error);
         let rudeRuby = Math.floor(Math.random() * 4);
         switch(rudeRuby)
