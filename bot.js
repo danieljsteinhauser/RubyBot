@@ -1,5 +1,7 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const client = new Discord.Client({
+partials: ['MESSAGE', 'REACTION']
+});
 let prefix = '-';
 
 client.on('ready', () => {
@@ -9,7 +11,7 @@ client.on('ready', () => {
 client.on('guildMemberAdd', member => {
   console.log(member.user.username + 'welcome to the server!')
    
-    let role = member.guild.roles.find('name', 'test');
+    const role = member.guild.roles.find('name', 'test');
     member.addRole(role);
 });
 
@@ -37,10 +39,41 @@ client.on('message', message => {
         
         
         }
-        
-                   
-                    
+                      
                           
+});
+
+
+
+client.on('messageReactionAdd', (reaction, user) => {
+    
+    console.log('Bot is ready!');
+    const { name } = reaction.emoji;
+    const member = reaction.message.guild.members.cache.get(userid);
+    if (reaction.message.id === '930860138397573122') {
+        switch (name){
+                
+            case ':goku:':
+                members.roles.add('930860952008654908');
+                break;
+                
+        }
+        
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });
   	
 // THIS  MUST  BE  THIS  WAY
