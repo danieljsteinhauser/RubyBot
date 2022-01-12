@@ -50,7 +50,7 @@ client.on('messageReactionAdd', (reaction, user) => {
     console.log('Hello!');
     const { name } = reaction.emoji;
     const member = reaction.message.guild.members.cache.get(userid);
-    if (reaction.message.id === '930860138397573122') {
+    if (reaction.message.id === '930874223956721704') {
         switch (name){
                 
             case '🍎':
