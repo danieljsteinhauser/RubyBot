@@ -53,7 +53,7 @@ client.on('messageReactionAdd', (reaction, user) => {
     if (reaction.message.id === '930860138397573122') {
         switch (name){
                 
-            case '930859960437469284':
+            case '🍎':
                 members.roles.add('930860952008654908');
                 break;
                 
