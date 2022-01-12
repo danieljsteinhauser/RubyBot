@@ -47,7 +47,7 @@ client.on('message', message => {
 
 client.on('messageReactionAdd', (reaction, user) => {
     
-    console.log('Bot is ready!');
+    console.log('Hello!');
     const { name } = reaction.emoji;
     const member = reaction.message.guild.members.cache.get(userid);
     if (reaction.message.id === '930860138397573122') {
