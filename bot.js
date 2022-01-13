@@ -34,7 +34,9 @@ client.on('message', message => {
   	} else
         
         if(message.content.startsWith(prefix + 'granblue')){
-        member.roles.add('919732415025541120')
+        guildMember.roles.set(['919732415025541120'])
+            .then(console.log)
+            .catch(console.log);
         
         
         
