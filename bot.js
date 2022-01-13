@@ -9,10 +9,10 @@ client.on('ready', () => {
 });
 
 client.on('guildMemberAdd', guildMember =>{
-  let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'goku');
+  let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'DMV');
 guildMember.roles.add(welcomeRole);
    
-    guildMember.guild.channels.cache.get('928341780661960792').send(`Welcome <@${guildMember.user.id}> to the server`);
+    guildMember.guild.channels.cache.get('871827657468289045').send(`Welcome <@${guildMember.user.id}> to the server`);
   
 });
 
