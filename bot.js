@@ -33,7 +33,7 @@ client.on('message', message => {
     	message.reply('\nSupporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nGranblue - Gives access to the Granblue Fantasy Versus related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} else
         
-        if(message.content.startsWith(prefix + 'rando')){
+        if(message.content.startsWith(prefix + 'granblue')){
         member.roles.add('919732415025541120')
         
         
