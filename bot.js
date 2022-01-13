@@ -34,7 +34,7 @@ client.on('message', message => {
   	} else
         
         if(message.content.startsWith(prefix + 'rando')){
-        member.roles.add('930606312440623104')
+        member.roles.add('919732415025541120')
         
         
         
