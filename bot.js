@@ -1,7 +1,12 @@
 const Discord = require('discord.js');
 const client = new Discord.Client({
-partials: ['MESSAGE', 'REACTION']
-});
+const client = new Client({ 
+    intents: [
+        Intents.FLAGS.GUILDS,
+        Intents.FLAGS.GUILD_MESSAGES,
+        Intents.FLAGS.GUILD_MEMBERS //also enable in discord developer portal
+    ] 
+})
 let prefix = '-';
 
 client.on('ready', () => {
