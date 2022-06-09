@@ -54,7 +54,7 @@ module.exports = {
   botPerms: ["EMBED_LINKS", "MANAGE_ROLES"],
   run: async (client, message, args) => {
     const user = message.mentions.members.first();
-    if (!message.content.startsWith(prefix))
+    if (!message.content.startsWith(prefix + 'giverole'))
       return message.channel.send(
         "Please mention a user you want to give the role to"
       );
