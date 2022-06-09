@@ -8,12 +8,9 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
-client.on('guildMemberAdd', guildMember =>{
-  let welcomeRole = guildMember.guild.roles.cache.find(role => role.name === 'DMV');
-guildMember.roles.add(welcomeRole);
-   
-    guildMember.guild.channels.cache.get('871827657468289045').send(`Welcome <@${guildMember.user.id}> to the server!`)
-  
+client.on('guildMemberAdd', guildMember => {
+    guildMember.guild.channels.cache.get('928341780661960792').send(`**Welcome to the discord server, <@${guildMember.user.id}>!**`);
+});
 });
 
 
@@ -46,41 +43,8 @@ if (role) message.guild.members.cache.get(message.author.id).roles.add(role);
 });
 
 
-
-module.exports = {
-  name: "giverole",
-  description: "Give roles to users",
-  userPerms: ["MANAGE_ROLES"],
-  botPerms: ["EMBED_LINKS", "MANAGE_ROLES"],
-  run: async (client, message, args) => {
-    const user = message.mentions.members.first();
-    if (!message.content.startsWith(prefix + 'giverole'))
-      return message.channel.send(
-        "Please mention a user you want to give the role to"
-      );
-    const name = args.slice(1).join(" ");
-    if (!name) return message.channel.send("Please type the name of the role");
-    const role = message.mentions.roles.first();
-    if (!role) return message.channel.send("Couldn't find the Provided Role");
-    await user.roles.add(role),
-      message.channel.send(`${user} now has the ${role} role`);
-  },
-};
-                
-        
-        
-    
-
-
-
-
-
-
-
-
-
-
-
+ 
+       
 
 
 
