@@ -33,9 +33,9 @@ client.on('message', message => {
     	message.reply('\nSupporter - If you \'re a supporter of Fullmetal or Hayden, get this role to see even more of their content and let them know that you care!\nGranblue - Gives access to the Granblue Fantasy Versus related channels.\nSmash - Gives access to the Smash series related channels.\nBBTag - Gives access to the BlazBlue Cross Tag Battle related channels, where I reign supreme. \nGG - Gives access to the GGXrd2 channels.');
   	} else
         
-        if(message.content.startsWith(prefix + 'granblue')){
+        if(message.content.startsWith(prefix + 'strive')){
             
-            let role = message.member.guild.roles.cache.find(role => role.name === "Granblue");
+            let role = message.member.guild.roles.cache.find(role => role.name === "Strive");
             
 if (role) message.guild.members.cache.get(message.author.id).roles.add(role);
         
@@ -52,11 +52,11 @@ client.on('messageReactionAdd', (reaction, user) => {
     console.log('Hello!');
     const { name } = reaction.emoji;
     const member = reaction.message.guild.members.cache.get(userid);
-    if (reaction.message.id === '930874223956721704') {
+    if (reaction.message.id === '984542284303450122') {
         switch (name){
                 
-            case '🍎':
-                members.roles.add('930860952008654908');
+            case '984542516927950938':
+                members.roles.add('919732670831951873');
                 break;
                 
         }
