@@ -29,7 +29,7 @@ client.on('message', message => {
         
         if(message.content.startsWith(prefix + 'strive')){
             
-            let role = message.member.guild.roles.cache.find(role => role.name === "Strive");
+            let role = message.member.guild.roles.cache.find(role => role.name === "Strive") ;
             let member = message.member;
             
 member.roles.add(role).catch(console.error);
