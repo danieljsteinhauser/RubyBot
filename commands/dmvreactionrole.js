@@ -8,7 +8,7 @@ module.exports= {
 //////////////////////Channel and Role Info////////////////////////
           const channel ='996036666017988708' // Laika's Bot Testing Channel
           // const channel = '871852170188832778' // DMV role-assign
-          // const channel = '928335650225270784' // Bot Testing Channel
+          // const channel = '928335650225270784' // DMV Bot Testing Channel
 
 
           const marylandRole = message.guild.roles.cache.find(role => role.name === "MD") // Use Role's Name
