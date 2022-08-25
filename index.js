@@ -1,7 +1,7 @@
 // instances API 
 const { channel } = require("diagnostics_channel");
 const Discord = require("discord.js")
-require('dotenv').config()
+
 
 // Bot limitations
 
