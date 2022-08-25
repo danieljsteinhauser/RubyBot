@@ -1,13 +1,13 @@
 // instances API 
+const { channel } = require("diagnostics_channel");
 const Discord = require("discord.js")
 require('dotenv').config()
 
 // Bot limitations
 
 const client = new Discord.Client({
-    intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS"], // parses the folowing inputs, guild_members is for new member join / leaving 
-    partials: ["MESSAGE", "CHANNEL", "REACTION"] // required for any reaction handling
-})
+    intents: ["GUILDS", "GUILD_MEMBERS", "GUILD_MESSAGES", "GUILD_MESSAGE_REACTIONS" ], // parses the folowing inputs, guild_members is for new member join / leaving 
+    partials: ["MESSAGE", "CHANNEL", "REACTION" ] }); // required for any reaction handling
 
 // allows file navigation and instances Discord Command Collection
 const fs = require('fs')
@@ -19,10 +19,9 @@ const prefix = "!"
 //Tells bot to only look at /commands/ dirrectory for command files
 const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 for(const file of commandFiles)
-{
-    const command = require(`./commands/${file}`)
- 
-    client.commands.set(command.name, command)
+{const command = require(`./commands/${file}`)
+client.commands.set(command.name, command
+    )
 }
 
 //////////////////////////////////////// LOGIN ////////////////////////////////////////////////////
@@ -30,9 +29,7 @@ for(const file of commandFiles)
 client.login(process.env.TOKEN)
 
 client.on("ready", () => 
-{
-    console.log('Logged in as ${client.user.tag}')
-})
+{console.log('Logged in as ${client.user.tag}')})
 
 ////////////////////////////// New Member Join => DMV ////////////////////////////////////////
 client.on('guildMemberAdd' , member =>{
@@ -52,8 +49,8 @@ client.on('guildMemberAdd' , member =>{
 const adminIDs = ['148938139413512192', '163127628004458497', '226563920863690752', '122380205766606849', '496739138805170227']
 
 client.on('messageCreate', message =>
-{
-    if(!message.content.startsWith(prefix) || message.author.bot) return; // allows for ! commands
+{   
+    if(!message.content.startsWith(prefix) || message.author.bot || message.content.length <= 10) return; // Ignores messages by bot and short !!! statements
     const args = message.content.slice(prefix.length).split(/ +/); 
     const command = args.shift().toLowerCase(); //formatting 
 
@@ -74,9 +71,15 @@ client.on('messageCreate', message =>
     }}
     else{
         message.channel.send('insufficent privledges, contact a mod to use this function')  // basic error messsage for non bot users
-    }
-/////////////////////Test Command //////////////////////////
-    if(command === 'ping') // test "!" command, use to debug other commands
-    {
-        client.commands.get('ping').execute(message, args)
-    }})
+}})
+
+client.on('messageCreate', message => { 
+    if (message.author.bot){ 
+    client.commands.get('ReactionRoleHandler').execute(message, Discord, client) // restarts reaction role handler if bot seems a message from itself
+}})
+
+client.on("ready", () => {
+    const dmvBotTestChannel = '928335650225270784'
+    //const laikaBotTestChannel = '996036666017988708'
+    client.channels.cache.get(dmvBotTestChannel).send("bot online") // Instances the ReactionHandler with message being found.
+})
