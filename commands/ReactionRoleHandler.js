@@ -1,7 +1,7 @@
 module.exports= {
    ///////////////////Scope////////////////////////
         name: 'ReactionRoleHandler',
-        description: "Assigns Roles to Maryland, Virginia, and DC", // note if getting ids from pasting \:emoji: into Discord; right-click does not work
+        description: "Assigns all roles", // note if getting ids from pasting \:emoji: into Discord; right-click does not work
         requiredChannel: 'role-assign',
         async execute(message, Discord, client){
    
