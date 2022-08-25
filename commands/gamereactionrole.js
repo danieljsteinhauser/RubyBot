@@ -2,7 +2,7 @@ module.exports= {
           //Channel and Role Definitions//
      name: 'gamereactionrole',
      description: "Assigns Roles to GGST, DNF, BBTAG, Blazblue, Granblue, Persona, KOFXV,  Skullgirls, Dengeki and MISC ", // note if getting ids from pasting \:emoji: into Discord; right-click does not work
-     requiredChannel: 'roletest',
+     requiredChannel: 'role-assign',
      async execute(message, args, Discord, client){
           
 //////////////////////Channel and Role Info////////////////////////
