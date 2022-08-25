@@ -1,2 +1,2 @@
 # RubyBot
-DMV Ruby Bot
+Rude Ruby Bot
